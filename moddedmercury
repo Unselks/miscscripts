@@ -579,7 +579,7 @@ function Library:create(options)
 		closeButton:tween{ImageColor3 = Library.CurrentTheme.StrongText}
 	end)
 
-	function _G.closeUI()
+	function Library:closeUI()
 		core.ClipsDescendants = true
 		core:fade(true)
 		wait(0.1)

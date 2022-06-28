@@ -1,3 +1,16 @@
+local StarterGui = game:GetService("StarterGui")
+
+game.ReplicatedStorage.ResetStats.OnServerEvent:Connect(function(player)
+	player.leaderstats.Points.Value = 0
+	player.leaderstats.Deaths.Value = 0
+	player.leaderstats.Activations.Value = 0
+	player.leaderstats.Wins.Value = 0
+	StarterGui:SetCore("SendNotification", {
+		Title = "NOTIFICATION!";
+		Text = "DRONE KILL ALL PATCHED"
+	})
+end)
+
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
